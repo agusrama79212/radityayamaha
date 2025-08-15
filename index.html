@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Resmi Yamaha - Raditya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- AOS Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #F3F4F6; /* Latar belakang abu-abu terang yang ramah */
+            color: #1F2937; /* Warna teks gelap untuk kontras */
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #00AFFF, #0077FF);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 151, 255, 0.2);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 151, 255, 0.4);
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px);
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            transition: all 0.3s ease;
+        }
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+             background-color: rgba(0, 0, 0, 0.5);
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #00AFFF;
+        }
+        .product-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+        }
+        .section-title {
+            color: #0052D4;
+        }
+        .contact-card {
+             background: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="deta.png" alt="Logo Dealer" class="h-10">
+            </div>
+            <a href="#kontak" class="btn-primary text-white font-bold px-6 py-2.5 rounded-full text-sm">
+                <i class="fab fa-whatsapp mr-2"></i>Hubungi Saya
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="swiper-container h-screen w-full -mt-[84px]">
+        <div class="swiper-wrapper">
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide relative">
+                <img src="beranda1.png" alt="Promo Yamaha 1" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute inset-0 container mx-auto px-6 flex flex-col justify-end items-center text-center pb-24 md:pb-32">
+                    <h1 class="text-5xl lg:text-7xl font-black leading-tight text-white" data-aos="fade-up">TEMUKAN YAMAHA IMPIANMU</h1>
+                    <p class="text-lg mt-4 max-w-2xl text-gray-200" data-aos="fade-up" data-aos-delay="200">Penawaran & Promo Terbaik di Bali. Proses Cepat, Unit Ready.</p>
+                    <a href="#produk" class="mt-8 btn-primary text-white font-bold py-4 px-10 rounded-full" data-aos="fade-up" data-aos-delay="400">Jelajahi Pilihan Motor</a>
+                </div>
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide relative">
+                <img src="beranda2.png" alt="Promo Yamaha 2" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <div class="absolute inset-0 container mx-auto px-6 flex flex-col justify-end items-center text-center pb-24 md:pb-32">
+                    <h1 class="text-5xl lg:text-7xl font-black leading-tight text-white">The Ultimate Pride</h1>
+                    <p class="text-lg mt-4 max-w-2xl text-gray-200">Dominasi jalanan dengan kenyamanan dan performa maksimal.</p>
+                    <a href="#produk" class="mt-8 btn-primary text-white font-bold py-4 px-10 rounded-full">Jelajahi Pilihan Motor</a>
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+            <div class="swiper-slide relative">
+                <img src="beranda3.png" alt="Promo Yamaha 3" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <div class="absolute inset-0 container mx-auto px-6 flex flex-col justify-end items-center text-center pb-24 md:pb-32">
+                    <h1 class="text-5xl lg:text-7xl font-black leading-tight text-white">Classy Yamaha, The New Trend</h1>
+                    <p class="text-lg mt-4 max-w-2xl text-gray-200">Tampil beda dengan desain klasik yang tak lekang oleh waktu.</p>
+                    <a href="#produk" class="mt-8 btn-primary text-white font-bold py-4 px-10 rounded-full">Jelajahi Pilihan Motor</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- Product Gallery Section -->
+    <main id="produk" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black section-title" data-aos="fade-up">Pilihan Unit Ready Stock</h2>
+            <p class="text-center text-gray-500 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Klik pada motor pilihan Anda untuk langsung terhubung dengan saya via WhatsApp.</p>
+        </div>
+        <div id="product-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            
+            <!-- PRODUK 1 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Grand%20Filano." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="filano.png" alt="Grand Filano" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Grand Filano</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 28.000.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 2 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="50">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Fazzio." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="fazio.png" alt="Fazzio" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Fazzio</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 23.600.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 3 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20NMAX." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="nmax .png" alt="NMAX" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">NMAX</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 33.800.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 4 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="150">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Aerox." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="aerox.png" alt="Aerox" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Aerox</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 30.930.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 5 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Lexi." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="lexi.png" alt="Lexi" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Lexi</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 28.530.000</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- PRODUK 6 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="250">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Mx%20King." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="mxking.png" alt="Mx King" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Mx King</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 27.665.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 7 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20FreeGo." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="freego.png" alt="FreeGo" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">FreeGo</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 24.300.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 8 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="350">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20Gear." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="gear.png" alt="Gear" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">Gear</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 19.205.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 9 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20MT-25." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="mt25.png" alt="MT-25" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">MT-25</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 64.800.000</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUK 10 -->
+            <div class="group product-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="450">
+                <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20motor%20WR-155." target="_blank" class="block">
+                    <div class="bg-gray-100">
+                        <img src="wr155.png" alt="WR-155" class="w-full h-48 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-xl text-gray-800 truncate">WR-155</h3>
+                        <p class="text-blue-600 font-black text-2xl mt-2">Rp 40.250.000</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Why Us Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-16 section-title" data-aos="fade-up">Kenapa Membeli dari Saya?</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-center">
+                <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-500 mb-5">
+                        <i class="fas fa-rocket fa-3x"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-2 text-gray-900">Proses Cepat & Mudah</h3>
+                    <p class="text-gray-600">Saya bantu proses kredit Anda dari awal hingga motor sampai di rumah tanpa ribet.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-500 mb-5">
+                        <i class="fas fa-hand-holding-dollar fa-3x"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-2 text-gray-900">DP & Angsuran Ringan</h3>
+                    <p class="text-gray-600">Dapatkan promo DP rendah dan cicilan terjangkau yang sesuai dengan budget Anda.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-500 mb-5">
+                        <i class="fas fa-headset fa-3x"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-2 text-gray-900">Layanan Profesional</h3>
+                    <p class="text-gray-600">Konsultasi gratis kapan saja. Saya siap menjawab semua pertanyaan Anda dengan ramah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto contact-card shadow-xl rounded-2xl p-8 lg:p-12 flex flex-col md:flex-row items-center gap-10" data-aos="zoom-in">
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <img src="image.png" alt="Foto Sales Yamaha" class="rounded-full w-full h-full object-cover shadow-2xl border-4 border-blue-500/50 bg-gray-200">
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="font-semibold text-blue-600">SALES EXECUTIVE YAMAHA</p>
+                    <h3 class="text-4xl font-black text-gray-900 mt-1">Raditya</h3>
+                    <p class="mt-4 text-gray-600">Hubungi saya sekarang untuk mendapatkan promo terbaik bulan ini. Jangan sampai ketinggalan!</p>
+                    <div class="mt-8">
+                        <a href="https://wa.me/6285857748618?text=Halo,%20Mas%20Raditya.%20Saya%20tertarik%20dengan%20promo%20motor%20Yamaha." target="_blank" class="btn-primary text-white font-bold py-4 px-8 rounded-full inline-flex items-center justify-center space-x-3 w-full sm:w-auto">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                            <span>Chat Langsung di WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p class="text-sm text-gray-400">&copy; 2025 Website Pribadi Raditya. Didesain untuk kemudahan Anda.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Initialize Swiper
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+</html>
